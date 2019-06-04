@@ -1,0 +1,91 @@
+html,body{
+	
+}
+img {
+	max-width:100%;
+	
+}
+#bg{
+	background:#555 url("../images/img1.jpg") ;
+	/* max-height:100%; *//* this line was creating problem*/
+	width:100%;
+	background-size:cover;
+	color:white;
+	
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+/* stroke */
+nav.stroke ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after{
+  position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+#main-nav{
+	opacity:0.7;
+	background-color:black;
+}
+
+#main-nav a{
+	color:white;
+}
+#cover{
+	padding-top: 6.25rem;	
+}
+a:hover{
+	text-decoration:none;
+}
+#brand{
+	padding-left:0.625rem;
+}
+ #rounded-1{
+  border-radius: 0.65rem;
+  margin-left:0.3125rem; 
+ 
+
+}
+#form{
+	padding-top:2rem;
+	padding-bottom:6rem;
+	opacity:0.8;
+
+}
+.space{
+	margin-left:0.3125rem;	
+}
+
+@media (max-width:35.9375rem) {
+	#rounded-1{
+	 margin-top:0.3125rem;
+	}
+	#name{
+	margin-left:0.3125rem;
+	margin-bottom:0.3125rem;
+	}
+	#phone{
+		margin-bottom:0.3125rem;
+	}
+	#cover-caption{
+		margin-left:0.3125rem;
+	}
+}
+
+
